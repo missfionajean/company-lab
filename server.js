@@ -17,7 +17,7 @@ const PORT = 3000;
 const menu = {
     
     burgerOTDAY: [
-        {day: "Sunday", burger: "placeholder1", desc: "placeholder1", img: url(), price: 15.00 },
+        {day: "Sunday", burger: "placeholder1", desc: "placeholder1", img: '/images/burger1.jpg', price: 15.00 },
         {day: "Monday", burger: "placeholder2", desc: "placeholder2", price: 15.00 },
         {day: "Tuesday", burger: "placeholder3", desc: "placeholder3", price: 15.00 },
         {day: "Wednesday", burger: "placeholder4", desc: "placeholder4", price: 15.00 },
@@ -41,20 +41,6 @@ const menu = {
     ],
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.get('/', (req, res) => {
     console.log('Test');
