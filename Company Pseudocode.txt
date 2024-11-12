@@ -1,0 +1,28 @@
+Project: Company Website - Fictional Restaurant
+
+Pages:
+
+Homepage
+About (Company History / Past Work)
+Staff
+Contact Us
+External Links
+
+
+Page Features:
+
+Navbar/Footer - Consistent across pages
+
+Navbar = Home - Menu - About - Staff - Contact Us - Links - "Place Order" Button
+
+Footer = Address - Phone - Email
+
+Homepage - Restaurant Name, Photos, Menu, Place Order (Catering, Pickup, Etc), Navbar (Navigate the site's pages), Burger of the Day (pulls data based on day of week)
+
+About - Photo, Company History (a couple headings & paragraphs), Past Work (fold into beginning of Company History)
+
+Staff - Divs for each of us (link to a personal about page, i.e. url.com/staff/Cora)
+
+Contact Us - Name, Email and Message fillable fields (HTTP  Post)
+
+Links - Links to other burger sites, etc?
