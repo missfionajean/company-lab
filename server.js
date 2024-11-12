@@ -27,17 +27,17 @@ const menu = {
     ],
 
     mains: [
-        {item: 1, entree: "placeholde1", desc: "placeholder1", price: 99.99},
-        {item: 2, entree: "placeholde2", desc: "placeholder2", price: 99.99},
-        {item: 3, entree: "placeholde3", desc: "placeholder3", price: 99.99},
-        {item: 4, entree: "placeholde4", desc: "placeholder4", price: 99.99},
+        {item: "main1", entree: "placeholde1", desc: "placeholder1", price: 99.99, img: '/images/burger1.jpg'},
+        {item: "main2", entree: "placeholde2", desc: "placeholder2", price: 99.99},
+        {item: "main3", entree: "placeholde3", desc: "placeholder3", price: 99.99},
+        {item: "main4", entree: "placeholde4", desc: "placeholder4", price: 99.99},
     ],
 
     sides: [
-        {item: 1, side: "placeholde1", desc: "placeholder1", price: 99.99},
-        {item: 2, side: "placeholde2", desc: "placeholder2", price: 99.99},
-        {item: 3, side: "placeholde3", desc: "placeholder3", price: 99.99},
-        {item: 4, side: "placeholde4", desc: "placeholder4", price: 99.99},
+        {item: "side1", side: "placeholde1", desc: "placeholder1", price: 99.99},
+        {item: "side2", side: "placeholde2", desc: "placeholder2", price: 99.99},
+        {item: "side3", side: "placeholde3", desc: "placeholder3", price: 99.99},
+        {item: "side4", side: "placeholde4", desc: "placeholder4", price: 99.99},
     ],
 
 }
@@ -48,7 +48,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/menu', (req, res) =>{
-    res.render('menu.ejs')
+    res.render('menu.ejs', {
+        botdItems: menu.burgerOTDAY,
+        mainItems: menu.mains,
+        sideItems: menu.sides,
+    })
 });
 
 app.get('/about', (req, res) =>{

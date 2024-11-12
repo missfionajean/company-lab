@@ -8,9 +8,39 @@
 </head>
 <body>
     <%- include('partials/header.ejs')%>
+    <br>
     <%- include('partials/nav.ejs') %>
+    <br>
+    <br>
+
+    <section>
+        <div id="menu">
+            <div id="mains">
+
+                <h3>Entree's</h3>
+                <% mainItems.forEach(main => { %> <!--loops through mains items-->
+                    <div id="<%= main.item %>">
+                        <div>
+                            <img id="entree1" src="<%= main.img %>"> 
+                        </div>
+                        <div>
+                            <%= main.entree %> <%= main.desc %> <%= main.price %> 
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
 
 
+
+        </div>
+
+        
+
+
+
+    </section>
+
+    <br>
     <%- include('partials/footer.ejs')%>
 </body>
-</html>
+</html>nodemon
