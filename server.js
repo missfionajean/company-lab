@@ -11,18 +11,30 @@ app.use(express.static('public'));
 
 const PORT = 3000;
 
-app.get('./home', (req, res) => {
+app.get('/', (req, res) => {
     console.log('Test');
-    
-})
+    res.render('home.ejs')   
+});
 
+app.get('/menu', (req, res) =>{
+    res.render('menu.ejs')
+});
 
+app.get('/about', (req, res) =>{
+    res.render('about.ejs')
+});
 
+app.get('/staff', (req, res) => {
+    res.render('staff.ejs')
+});
 
+app.get('/contact', (req, res) => {
+    res.render('contact.ejs')
+});
 
-
-
-
+app.get('/links', (req, res) => {
+    res.render('links.ejs')
+});
 
 
 
