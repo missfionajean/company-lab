@@ -4,12 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/app.css">   
-    <title>RESTAURANT NAME</title>
+    <title>Fee-Fi-Fo-Food</title>
 </head>
 <body>
     <h1>place holder</h1>
     <%- include('partials/nav.ejs') %>
 
- 
+    <br>
+
+    <!-- maybe put this in a header? -->
+    <h1>Fee-Fi-Fo-Food</h1>
+    <h3>EST.2024</h3>
+    <h5>Fiona owned & operated | Gourmet Burgers</h5>
+
+    <br>
+
+    <div>
+        <h2>BIG BURGERS FOR A BIG APPETITE</h2>
+    </div>
+
+    <!-- hero section for burger of the day! -->
+    <section id="hero">
+        <div id="botd">
+            <div id="botdtitle">
+                <h3>Burger of the Day</h3>
+                <h4>A speciality burger for each day on the week!</h4>
+            </div>
+            <div id="imgContainer">
+                <img id="botdImg" alt="Burger of the Day" src=""> <!--add img rotation of burgers following the calander day-->
+            </div>
+            <div id="botdInfo">
+                <h4 id="botd title"> BOTD placholder</h4>
+                <p id="botdDesc">decscription placeholder decscription placeholder decscription placeholder decscription placeholder decscription placeholder </p>
+                <button id="botdOrder">Order Now!</button>
+            </div>
+            <div id="fullMenu">
+                <a href="/menu">See Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- burgers of the week? so to show case the specialty burgers that cycle each week? -->
+
+    <br>
+
+    <section id="catering">
+        <div>
+            <h3>Catering</h3>
+            <p>Please <a href="/contact">reach out</a> to hear about or catering options.</p>
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs')%>
+
+
 </body>
 </html>
