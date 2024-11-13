@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/app.css">   
-    <title>Document</title>
-</head>
-<body>
-    <%- include('partials/header.ejs')%>
-    <br>
-    <%- include('partials/nav.ejs') %>
-    <br>
-    <br>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/staff.css" />
+		<title>Staff</title>
+	</head>
+	<body>
+		<%- include('partials/header.ejs')%>
+		<br>
+		<%- include('partials/nav.ejs') %>
+		<br>
+		<br>
 
-    <br>
-    <%- include('partials/footer.ejs')%>
-    
-</body>
+		<h1>Our Staff</h1>
+		<p>
+			Fee-Fi-Fo-Food is the only restaurant run exclusively by people
+			named Fiona, though spellings may vary.
+		</p>
+		<p>
+			We've assemled a crack team of like-named individuals to bring you
+			giant-sized burgers that put the "OH" in Fiohna! Meet our creative
+			team below!
+		</p>
+		<h2>Meet The Fionas</h2>
+
+		<% currentStaff.forEach( (fiona) => { %>
+		<div class="staff-banner">
+            <div class="staff-pic">
+                <img src=<%= fiona.pic %> alt=<%= fiona.first %> class="staff-pic">
+            </div>
+			<div class="staff-blurb">
+				<h3><%= fiona.first %> <%= fiona.last %> (<%= fiona.job %>)</h3>
+				<p><%= fiona.blurb %></p>
+                <a href=<%= "/staff/" + fiona.last %>>Read More</a>
+			</div>
+		</div>
+		<% }) %>
+
+		<p>
+			Are you a Fiona looking for work? Visit our
+			<a href="/contact">Contact Us</a> page to drop us a line!
+		</p>
+
+		<br>
+		<%- include('partials/footer.ejs')%>
+	</body>
 </html>

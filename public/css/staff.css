@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+    background-color: gray;
+}
+
+.staff-banner {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.staff-pic {
+    width: 200px;
+    height: 200px;
+}
+
+.show-banner {
+    display: flex;
+    gap: 15px;
+}
+
+.show-banner h1 {
+    font-size: 40px;
+}
+
+.show-banner h2 {
+    font-size: 32px;
+}

@@ -1,13 +1,29 @@
 body {
     background-color: grey;
-}
-
-
-
-
-#contact-head {
     text-align: center;
 }
+
+header {
+ text-align: center;
+}
+
+#botdImg {
+    width: 300px;
+    height: 300px;
+
+}
+
+
+.mainImg {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* #contact-head {
+    text-align: center;
+} */
+
 #email-message {
     text-align: center;
 }
@@ -33,4 +49,9 @@ body {
     width: 125px;
     height: 45px;
     border-radius: 10px;
+}
+
+
+footer { 
+    text-align: center;
 }

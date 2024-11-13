@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/staff.css" />
+		<title><%= first %> <%= last %></title>
+	</head>
+	<body>
+		<%- include('partials/header.ejs')%>
+		<br>
+		<%- include('partials/nav.ejs') %>
+		<br>
+		<br>
+
+		<section class="show-banner">
+            <img src=<%= "../" + pic %> alt=<%= first %> class="staff-pic">
+			<div>
+				<h1><%= first %> <%= last %></h1>
+				<h2><%= job %></h2>
+			</div>
+		</section>
+
+		<section class="show-info">
+            <h3>Sign</h3>
+            <p><%= sign %></p>
+            <h3>Likes</h3>
+            <p><%= likes %></p>
+            <h3>Dislikes</h3>
+            <p><%= dislikes %></p>
+            <h3>About <%= first %></h3>
+            <p><%= bio %></p>
+            <h3>Favorite Thing On The Menu</h3>
+            <p><%= fave %></p>
+        </section>
+        <br>
+		<p>
+			Are you a Fiona looking for work? Visit our
+			<a href="/contact">Contact Us</a> page to drop us a line!
+		</p>
+
+		<br>
+		<%- include('partials/footer.ejs')%>
+	</body>
+</html>

@@ -15,16 +15,33 @@
 
     <section>
         <div id="menu">
-            <div id="mains">
 
-                <h3>Entree's</h3>
-                <% mainItems.forEach(main => { %> <!--loops through mains items-->
-                    <div id="<%= main.item %>">
+            <!-- card divs perhaps instead of list??-->
+
+            <div id="mains">
+                <h2>Entree's</h2>
+                <% mainItems.forEach(main => { %> <!--loops through mains items in individual divs-->
+                    <div>
                         <div>
-                            <img id="entree1" src="<%= main.img %>"> 
+                            <h4><%= main.entree %> | <%= main.price %> </h4>
+                                <div>
+                                    <img class="mainImg" id="<%= main.item %>" alt="<%= main.entree %>" src="<%= main.img %>"> <!--adds item number and img path to item -->
+                                </div>
+                            <p><%= main.desc %></p>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+            <div id="sides">
+                <h2>Side Dishes</h2>
+                <% sideItems.forEach(side => { %> <!--loops through and lists side items in individual divs-->
+                    <div>
+                        <div>
+                             <!--adds item number and img path to item removed imades for sides-->
                         </div>
                         <div>
-                            <%= main.entree %> <%= main.desc %> <%= main.price %> 
+                            <h4><%= side.side %> | <%= side.price %> </h4>
+                             <p><%= side.desc %>  </p>
                         </div>
                     </div>
                 <% }); %>
