@@ -1,8 +1,46 @@
 * {
 	box-sizing: border-box;
-    background-color: gray;
 }
 
+body {
+    background-color: darkslategray;
+    color: mintcream;
+}
+
+/* header partial (needs to be in all sheets currently) */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    align-items: center;
+    background-image: url("../images/fee-fi-logo.png");
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#headtitle {
+    font-size: 45px;
+    margin: 60px 0 15px 0;
+}
+
+#headsubtitle {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* nav bar css */
+nav {
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: mintcream;
+}
+
+
+/* staff and staff-show page css */
 .staff-banner {
     display: flex;
     gap: 15px;
@@ -25,4 +63,10 @@
 
 .show-banner h2 {
     font-size: 32px;
+}
+
+
+/* footer css (all pages) */
+footer { 
+    text-align: center;
 }

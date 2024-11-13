@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/app.css">   
-    <title>Document</title>
-</head>
-<body>
-    <%- include('partials/header.ejs')%>
-    <br>
-    <%- include('partials/nav.ejs') %>
-    <br>
-    <br>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/app.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<%- include('partials/header.ejs')%>
+		<br />
+		<%- include('partials/nav.ejs') %>
 
-    <br>
-    <%- include('partials/footer.ejs')%>
-    
-</body>
+		<div id="linkbox">
+			<a href="/">This link goes to Home</a>
+			<a href="/menu">This link goes to Menu</a>
+			<a href="/about">This link goes to About</a>
+			<a href="/staff">This link goes to Staff</a>
+			<a href="/contact">This link goes to Contact Us</a>
+		</div>
+
+		<br />
+		<%- include('partials/footer.ejs')%>
+	</body>
 </html>

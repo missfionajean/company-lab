@@ -10,9 +10,8 @@
 		<%- include('partials/header.ejs')%>
 		<br>
 		<%- include('partials/nav.ejs') %>
-		<br>
-		<br>
 
+		<div>
 		<h1>Our Staff</h1>
 		<p>
 			Fee-Fi-Fo-Food is the only restaurant run exclusively by people
@@ -24,6 +23,7 @@
 			team below!
 		</p>
 		<h2>Meet The Fionas</h2>
+	</div>
 
 		<% currentStaff.forEach( (fiona) => { %>
 		<div class="staff-banner">
@@ -33,7 +33,7 @@
 			<div class="staff-blurb">
 				<h3><%= fiona.first %> <%= fiona.last %> (<%= fiona.job %>)</h3>
 				<p><%= fiona.blurb %></p>
-                <a href=<%= "/staff/" + fiona.last %>>Read More</a>
+                <a href=<%= "/F" + fiona.last %>>Read More</a>
 			</div>
 		</div>
 		<% }) %>

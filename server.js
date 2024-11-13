@@ -153,7 +153,7 @@ app.get('/staff', (req, res) => {
 })
 
 
-app.get("/staff/:lastName", (req, res) => {
+app.get("/F:lastName", (req, res) => {
     const showFiona = STAFF.currentStaff.filter(
         (fiona) => fiona.last === req.params.lastName
     )[0];

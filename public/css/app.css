@@ -1,12 +1,41 @@
 body {
-    background-color: grey;
+    background-color: darkslategray;
+    color: mintcream;
     text-align: center;
 }
 
+/* header partial (needs to be in all sheets currently) */
 header {
- text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    background-image: url("../images/fee-fi-logo.png");
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+#headtitle {
+    font-size: 45px;
+    margin: 60px 0 15px 0;
+}
+
+#headsubtitle {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* nav bar css */
+nav {
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: mintcream;
+}
+
+/* home page css*/
 #botdImg {
     width: 300px;
     height: 300px;
@@ -14,12 +43,13 @@ header {
 }
 
 
+/* menu page css */
 .mainImg {
     width: 200px;
     height: 200px;
 }
 
-
+/* contact page css */
 /* #contact-head {
     text-align: center;
 } */
@@ -52,6 +82,16 @@ header {
 }
 
 
-footer { 
+/* link page css */
+#linkbox {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+}
+
+
+/* footer css (all pages) */
+footer {
     text-align: center;
 }
